@@ -4,6 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>TV Energy Consumption Data Story</title>
+
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -87,187 +88,143 @@
     }
   </style>
 </head>
+
 <body>
 
-  <header>
-    <h1>TV Energy Consumption Data Story</h1>
-    <p>
-      This website presents a data story based on an Australian television energy consumption dataset.
-      The aim is to help everyday consumers understand how screen technology, screen size, and energy use
-      relate to each other.
-    </p>
-  </header>
+<header>
+  <h1>TV Energy Consumption Data Story</h1>
+  <p>
+    This website presents a data story based on an Australian television energy dataset.
+    It aims to help consumers understand how TV brands, screen size, and energy consumption relate to each other.
+  </p>
+</header>
 
-  <main>
+<main>
 
-    <section>
-      <h2>1. Who is the audience?</h2>
-      <p>
-        The audience for this visualisation is Australian consumers who are interested in buying a television.
-        This audience is likely to want simple and practical information rather than technical detail.
-        They want to know which TVs are common, which types are usually larger, and what factors affect energy consumption.
-      </p>
+<section>
+  <h2>1. Who is the audience?</h2>
+  <p>
+    The audience for this visualisation is Australian consumers who are planning to purchase a television.
+    They are interested in understanding energy usage, brand options, and how screen size impacts performance.
+  </p>
+</section>
 
-      <h3>Visualisation guidelines</h3>
-      <ul>
-        <li>Use simple language and clear chart titles.</li>
-        <li>Present one main idea in each section.</li>
-        <li>Explain what the chart shows, not just display it.</li>
-        <li>Avoid misleading conclusions by adding context.</li>
-      </ul>
-    </section>
+<section>
+  <h2>2. What does the audience want to know?</h2>
+  <ul>
+    <li>Which screen technologies are most common?</li>
+    <li>Which TV brands dominate the market?</li>
+    <li>How does screen size affect energy consumption?</li>
+  </ul>
+</section>
 
-    <section>
-      <h2>2. What does the audience want to know?</h2>
-      <p>The audience is likely to ask these questions:</p>
-      <ul>
-        <li>Which screen technologies are most common?</li>
-        <li>What is the average screen size of each screen technology?</li>
-        <li>How does energy consumption change with screen size and technology?</li>
-      </ul>
-    </section>
+<section>
+  <h2>3. Question 1: Which screen technologies are more frequent?</h2>
 
-    <section>
-      <h2>3. Question 1: Which screen technologies are more frequent?</h2>
-      <p>
-        This question helps show which types of TVs appear most often in the dataset.
-        It gives the audience context about the market and helps them understand whether some technologies
-        are more common than others.
-      </p>
+  <p>
+    This question shows which TV technologies appear most often in the dataset.
+  </p>
 
-      <div class="chart">
-        <img src="chart1.png" alt="Frequency of screen technologies">
-      </div>
+  <div class="chart">
+    <img src="chart1.png" alt="Screen technology frequency">
+  </div>
 
-      <h3>Answer</h3>
-      <p>
-        This chart shows the number of TVs for each screen technology category, such as LCD, LCD (LED), and OLED.
-        It allows the audience to quickly compare which technologies appear most often in the dataset.
-        A more common technology may give consumers more product choices in the market.
-      </p>
+  <h3>Answer</h3>
+  <p>
+    The chart shows the frequency of screen technologies such as LCD, LCD (LED), and OLED.
+    LCD and LCD (LED) TVs are more common, while OLED TVs appear less frequently.
+  </p>
 
-      <div class="note">
-        <strong>Main takeaway:</strong> This chart provides market context by showing which TV screen technologies are most frequently represented.
-      </div>
-    </section>
+  <div class="note">
+    <strong>Main takeaway:</strong> LCD-based technologies dominate the dataset.
+  </div>
+</section>
 
-    <section>
-      <h2>4. Question 2: What is the average screen size of each type?</h2>
-      <p>
-        This question helps explain whether some screen technologies are usually sold in larger sizes than others.
-        This is important because screen size can affect both price and energy use.
-      </p>
+<section>
+  <h2>4. Question 2: Which TV brands are most common?</h2>
 
-      <div class="chart">
-        <img src="chart2.png" alt="Average screen size by screen technology">
-      </div>
+  <p>
+    This question examines the distribution of TV brands in the dataset.
+  </p>
 
-      <h3>Answer</h3>
-      <p>
-        This chart compares the average screen size of each screen technology.
-        It shows whether technologies such as OLED are generally associated with larger TVs than LCD or LCD (LED).
-        This is important because a larger average screen size may help explain why some technologies appear to use more energy.
-      </p>
+  <div class="chart">
+    <img src="chart2.png" alt="TV brand distribution">
+  </div>
 
-      <div class="note">
-        <strong>Main takeaway:</strong> Screen technology and screen size are related, so size must be considered before making energy comparisons.
-      </div>
-    </section>
+  <h3>Answer</h3>
+  <p>
+    The pie chart shows that Samsung has the largest share of TV models,
+    followed by brands like Kogan and LG.
+    Smaller brands such as Hisense and Eko contribute less,
+    while a large "Other" category represents many minor brands.
+  </p>
 
-    <section>
-      <h2>5. Question 3: How does energy consumption vary by screen size and technology?</h2>
-      <p>
-        This is the main data story question. It compares average energy consumption across small, medium,
-        and large TVs for each screen technology.
-      </p>
+  <p>
+    This indicates that the market is both dominated by a few major brands
+    and also includes many smaller competitors.
+  </p>
 
-      <div class="chart">
-        <img src="chart3.png" alt="Average energy consumption by screen size and technology">
-      </div>
+  <div class="note">
+    <strong>Main takeaway:</strong> A few major brands dominate, while many smaller brands share the rest of the market.
+  </div>
+</section>
 
-      <h3>Answer</h3>
-      <p>
-        This graph shows the average energy consumption of TVs based on both screen size and screen technology.
-        The clearest pattern is that energy consumption increases as screen size increases.
-        Large TVs have the highest average energy consumption, medium TVs are lower, and small TVs use the least energy.
-      </p>
+<section>
+  <h2>5. Question 3: How does screen size affect energy consumption?</h2>
 
-      <p>
-        The graph also shows some differences between LCD, LCD (LED), and OLED.
-        However, the effect of screen size is stronger than the effect of screen technology.
-        For example, all large TVs use much more energy than small TVs, regardless of the technology used.
-      </p>
+  <p>
+    This question explores the relationship between screen size and energy consumption.
+  </p>
 
-      <p>
-        OLED and LCD (LED) televisions often appear to use more energy than LCD televisions,
-        but this should be interpreted carefully.
-        Earlier results showed that some technologies are associated with larger average screen sizes,
-        which means higher energy use may be partly explained by size rather than technology alone.
-      </p>
+  <div class="chart">
+    <img src="chart3.png" alt="Screen size vs energy consumption">
+  </div>
 
-      <div class="note">
-        <strong>Main takeaway:</strong> Screen size is the main factor influencing energy consumption. Screen technology matters, but it should not be compared without considering size.
-      </div>
-    </section>
+  <h3>Answer</h3>
+  <p>
+    The scatter plot shows a strong positive relationship between screen size and energy consumption.
+    As screen size increases, energy usage also increases significantly.
+  </p>
 
-    <section>
-      <h2>6. Final conclusion</h2>
-      <p>
-        The data story shows that screen size has a major impact on TV energy consumption.
-        Although there are differences between screen technologies, these differences cannot be interpreted fairly without also considering the size of the television.
-      </p>
-      <p>
-        For consumers, this means that choosing a smaller TV may have a bigger effect on energy use than simply choosing a different screen technology.
-        A useful buying decision should therefore consider both the technology and the screen size together.
-      </p>
-    </section>
+  <p>
+    While there is some variation between TVs of the same size,
+    the overall trend is very clear.
+  </p>
 
-    <section>
-      <h2>7. About the data</h2>
+  <div class="note">
+    <strong>Main takeaway:</strong> Screen size is the main factor affecting energy consumption.
+  </div>
+</section>
 
-      <h3>Data source</h3>
-      <p>
-        The dataset is based on television energy information available for the Australian market.
-      </p>
+<section>
+  <h2>6. Final Conclusion</h2>
+  <p>
+    The analysis shows that while brands and technologies vary,
+    screen size has the biggest impact on energy consumption.
+    Larger TVs consume significantly more energy than smaller ones.
+  </p>
+</section>
 
-      <h3>Data processing</h3>
-      <p>
-        The data was cleaned and transformed in KNIME. This included filtering columns, cleaning text values,
-        grouping records, creating screen-size categories, and summarising data for charts.
-      </p>
+<section>
+  <h2>7. About the Data</h2>
+  <p><strong>Source:</strong> Australian TV energy dataset</p>
+  <p><strong>Processing:</strong> Cleaned and analysed using KNIME</p>
+  <p><strong>Limitations:</strong> Dataset may not reflect all market conditions</p>
+</section>
 
-      <h3>Privacy</h3>
-      <p>
-        This dataset contains product information, not personal information, so privacy risk is low.
-      </p>
+<section>
+  <h2>8. AI Declaration</h2>
+  <p>
+    AI assistance was used to structure and refine this webpage.
+    All analysis and interpretation were completed by the student.
+  </p>
+</section>
 
-      <h3>Accuracy and limitations</h3>
-      <p>
-        The dataset represents the version downloaded for this exercise and may change over time.
-        Results may also be influenced by category definitions, cleaning decisions, and the structure of the available data.
-      </p>
+</main>
 
-      <h3>Ethics</h3>
-      <p>
-        The visualisation aims to present the data honestly and avoid misleading claims.
-        It is important not to suggest that one screen technology is always worse without acknowledging the influence of screen size.
-      </p>
-    </section>
-
-    <section>
-      <h2>8. AI Declaration</h2>
-      <p>
-        AI assistance was used to help structure this webpage and refine the wording of the explanations.
-        The data analysis, chart creation, interpretation, and final submission decisions remain my own work.
-      </p>
-    </section>
-
-  </main>
-
-  <footer>
-    COS30045 Data Visualisation — TV Energy Consumption Data Story
-  </footer>
+<footer>
+  COS30045 Data Visualisation Assignment
+</footer>
 
 </body>
 </html>
-
