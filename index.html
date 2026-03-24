@@ -3,284 +3,107 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TV Energy Consumption Data Story</title>
-
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f4f6f8;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    header {
-      background: #0f172a;
-      color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0 0 10px;
-      font-size: 2.2rem;
-    }
-
-    header p {
-      max-width: 850px;
-      margin: 0 auto;
-      color: #dbeafe;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 30px auto;
-      padding: 0 20px 40px;
-    }
-
-    section {
-      background: white;
-      margin-bottom: 25px;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      margin-top: 0;
-      color: #0f172a;
-    }
-
-    h3 {
-      color: #1e3a8a;
-      margin-bottom: 8px;
-    }
-
-    .chart {
-      text-align: center;
-      margin: 20px 0;
-    }
-
-    .chart img {
-      width: 100%;
-      max-width: 850px;
-      border-radius: 10px;
-      border: 1px solid #ddd;
-      background: white;
-    }
-
-    .note {
-      background: #eff6ff;
-      border-left: 5px solid #2563eb;
-      padding: 12px 15px;
-      margin-top: 15px;
-      border-radius: 8px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 20px;
-      color: #555;
-      font-size: 0.95rem;
-    }
-  </style>
+  <title>Appliance Energy Consumption Website - Home</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">EnergyWise</a>
 
-<header>
-  <h1>TV Energy Consumption Data Story</h1>
-  <p>
-    This website presents a data story based on an Australian television energy dataset.
-    It helps consumers understand which screen technologies are common, which brands dominate
-    the market, and how screen size affects energy consumption.
-  </p>
-</header>
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="televisions.html">Televisions</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-<main>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Appliance Energy Consumption Website</h1>
+        <p>
+          Welcome to EnergyWise. This website explores appliance energy consumption
+          with a focus on televisions in the Australian market. It is designed to help
+          users understand energy usage, screen size, and how better choices can reduce
+          electricity consumption.
+        </p>
+        <a href="televisions.html" class="btn">Explore Televisions</a>
+      </div>
+    </section>
 
-<section>
-  <h2>1. Who is the audience?</h2>
-  <p>
-    The audience for this visualisation is Australian consumers who are interested in buying a television.
-    They are likely to want practical information that helps them compare products, understand the market,
-    and make better decisions about energy use.
-  </p>
-</section>
+    <section class="content-section">
+      <div class="container">
+        <h2>Why energy consumption matters</h2>
+        <p>
+          Household appliances contribute significantly to electricity use. Understanding
+          how products differ in energy consumption helps consumers make better buying
+          decisions and can reduce long-term energy costs.
+        </p>
+        <p>
+          Televisions are a good example because their energy use is influenced by
+          factors such as screen technology, screen size, and usage patterns.
+        </p>
+      </div>
+    </section>
 
-<section>
-  <h2>2. What does the audience want to know?</h2>
-  <ul>
-    <li>Which screen technologies are most common?</li>
-    <li>Which TV brands are most common in the dataset?</li>
-    <li>How does screen size affect energy consumption?</li>
-  </ul>
-</section>
+    <section class="content-section alt-bg">
+      <div class="container">
+        <h2>Frequently Asked Questions</h2>
 
-<section>
-  <h2>3. Question 1: Which screen technologies are more frequent?</h2>
+        <div class="faq-item">
+          <button class="faq-question">What is appliance energy consumption?</button>
+          <div class="faq-answer">
+            <p>
+              Appliance energy consumption refers to the amount of electricity an appliance
+              uses during operation. It is commonly measured in kilowatt-hours (kWh).
+            </p>
+          </div>
+        </div>
 
-  <p>
-    This question examines the distribution of television screen technologies in the dataset.
-    Understanding this helps identify which technologies are most widely used in the market
-    and which are less common.
-  </p>
+        <div class="faq-item">
+          <button class="faq-question">Why do larger TVs use more energy?</button>
+          <div class="faq-answer">
+            <p>
+              Larger TVs require more power because they have bigger screens to illuminate
+              and display content. This usually leads to higher labelled energy consumption.
+            </p>
+          </div>
+        </div>
 
-  <div class="chart">
-    <img src="chart1.png" alt="Frequency of screen technologies">
-  </div>
+        <div class="faq-item">
+          <button class="faq-question">Does screen technology affect energy use?</button>
+          <div class="faq-answer">
+            <p>
+              Yes, but screen size is often one of the strongest influences. Different
+              technologies may vary in efficiency, but a larger screen generally uses
+              more power than a smaller one.
+            </p>
+          </div>
+        </div>
 
-  <h3>Answer</h3>
-  <p>
-    The chart shows that LCD and LCD (LED) televisions are significantly more common than OLED televisions.
-    This indicates that LCD-based technologies dominate the current market, while OLED remains less widely available.
-  </p>
+        <div class="faq-item">
+          <button class="faq-question">How can consumers reduce TV energy use?</button>
+          <div class="faq-answer">
+            <p>
+              Consumers can reduce energy use by selecting appropriately sized TVs,
+              checking energy labels, and adjusting brightness and standby settings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-  <p>
-    One key reason for this is cost and manufacturing. LCD and LED TVs are cheaper to produce,
-    making them more affordable for consumers and more widely stocked by retailers.
-    As a result, they appear more frequently in the dataset.
-  </p>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Pasan DeZoyza | GenAI assistance used for structure and wording.</p>
+    </div>
+  </footer>
 
-  <p>
-    In contrast, OLED TVs are generally more expensive and are considered a premium product.
-    They offer better picture quality, such as deeper blacks and higher contrast,
-    but their higher price limits how widely they are sold.
-  </p>
-
-  <p>
-    This explains why OLED appears less frequently in the dataset despite its superior performance.
-    The dataset reflects real market behaviour, where affordability and accessibility
-    often have a stronger influence than performance alone.
-  </p>
-
-  <div class="note">
-    <strong>Main takeaway:</strong> LCD and LED TVs dominate due to lower cost and wider availability,
-    while OLED TVs are less common because they are premium and more expensive.
-  </div>
-</section>
-
-<section>
-  <h2>4. Question 2: Which TV brands are most common?</h2>
-
-  <p>
-    This question looks at how TV models are distributed across brands.
-    It helps show whether the market is dominated by a few major brands or shared more evenly across many brands.
-  </p>
-
-  <div class="chart">
-    <img src="chart2.png" alt="TV brand distribution pie chart">
-  </div>
-
-  <h3>Answer</h3>
-  <p>
-    This pie chart shows that Samsung is the largest named brand in the dataset.
-    However, the "Other" category is even larger, which means many smaller brands together make up a major share of the market.
-    Kogan and LG also have noticeable shares, while Hisense and Eko contribute smaller proportions.
-  </p>
-
-  <p>
-    This suggests that the TV market is made up of both strong major brands and a large number of smaller competing brands.
-    In other words, Samsung is the most dominant individual brand, but the market overall is still quite diverse.
-  </p>
-
-  <div class="note">
-    <strong>Main takeaway:</strong> Samsung is the leading individual brand, but the large "Other" category shows that many smaller brands together make up a very significant part of the market.
-  </div>
-</section>
-
-<section>
-  <h2>5. Question 3: How does screen size affect energy consumption?</h2>
-
-  <p>
-    This question examines the relationship between television screen size and labelled energy consumption.
-    A scatter plot is used because it is well suited to showing how two numeric variables are related.
-  </p>
-
-  <div class="chart">
-    <img src="chart3.png" alt="Scatter plot of screen size and energy consumption">
-  </div>
-
-  <h3>Answer</h3>
-  <p>
-    This scatter plot shows a clear positive relationship between screen size and energy consumption.
-    As screen size increases, labelled energy consumption also increases.
-    Smaller televisions tend to use less power, while larger televisions use much more.
-  </p>
-
-  <p>
-    Although there is some spread in the data, the overall pattern is very strong.
-    This means that screen size is a major factor affecting how much energy a television uses.
-  </p>
-
-  <div class="note">
-    <strong>Main takeaway:</strong> The bigger the screen size, the higher the energy consumption.
-  </div>
-</section>
-
-<section>
-  <h2>6. Final Conclusion</h2>
-  <p>
-    This data story shows three important insights. First, some screen technologies are more common than others in the dataset.
-    Second, Samsung is the most dominant individual brand, but many smaller brands together make up a very large part of the market.
-    Third, and most importantly, energy consumption increases as screen size increases.
-  </p>
-
-  <p>
-    For consumers, this means that brand and technology matter, but screen size is one of the most important factors to consider when thinking about energy use.
-    Choosing a larger TV is likely to result in higher electricity consumption.
-  </p>
-</section>
-
-<section>
-  <h2>7. About the Data</h2>
-
-  <h3>Data source</h3>
-  <p>
-    The dataset is based on television energy information available for the Australian market.
-  </p>
-
-  <h3>Data processing</h3>
-  <p>
-    The data was cleaned and transformed in KNIME. This included filtering columns, cleaning text values,
-    grouping records, and preparing tables for visualisation.
-  </p>
-
-  <h3>Privacy</h3>
-  <p>
-    This dataset contains product information rather than personal information, so privacy concerns are minimal.
-  </p>
-
-  <h3>Accuracy and limitations</h3>
-  <p>
-    The dataset reflects the version downloaded for this exercise and may change over time.
-    Some results may also be influenced by cleaning decisions and grouping choices made during preprocessing.
-  </p>
-
-  <h3>Ethics</h3>
-  <p>
-    The visualisation aims to present the data honestly and clearly.
-    It is important not to exaggerate conclusions or suggest claims that are not supported by the dataset.
-  </p>
-</section>
-
-<section>
-  <h2>8. AI Declaration</h2>
-  <p>
-    AI assistance was used to help refine the structure and wording of this webpage.
-    The data analysis, chart selection, interpretation, and final submission decisions remain my own work.
-  </p>
-</section>
-
-</main>
-
-<footer>
-  COS30045 Data Visualisation — TV Energy Consumption Data Story
-</footer>
-
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
