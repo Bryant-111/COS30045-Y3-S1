@@ -10,3 +10,7 @@ svg
   .attr("width", 414)
   .attr("height", 16)
   .attr("fill", "blue");
+
+d3.csv("../../data/2026 TV Data.csv", d => {
+  console.log(d);
+});
