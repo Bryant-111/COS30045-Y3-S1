@@ -3,14 +3,6 @@ const svg = d3.select(".responsive-svg-container")
   .attr("viewBox", "0 0 1200 1600")
   .style("border", "1px solid black");
 
-svg
-  .append("rect")
-  .attr("x", 10)
-  .attr("y", 10)
-  .attr("width", 414)
-  .attr("height", 16)
-  .attr("fill", "blue");
-
 d3.csv("data/tvBrandCount.csv", d => {
   return {
     brand: d.brand,
@@ -29,10 +21,10 @@ d3.csv("data/tvBrandCount.csv", d => {
   drawBarChart(data);
 });
 
-function drawBarChart(data) {
-  console.log("drawBarChart called");
-  console.log(data);
-}
-
-
-
+const drawBarChart = data => {
+  svg
+    .selectAll("rect")
+    .data(data)
+    .join("rect")
+    .attr("class", d => `bar-${d.count}`);
+};
