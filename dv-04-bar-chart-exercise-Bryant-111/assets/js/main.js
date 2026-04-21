@@ -52,5 +52,14 @@ const createBarChart = data => {
     .attr("width", d => xScale(d.count))
     .attr("height", yScale.bandwidth())
     .attr("fill", "blue");
+
+  barAndLabel
+    .append("text")
+    .text(d => d.brand)
+    .attr("x", 90)
+    .attr("y", 15)
+    .attr("text-anchor", "end")
+    .style("font-size", "13px");
 };
+
 
