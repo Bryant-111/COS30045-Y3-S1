@@ -28,3 +28,4 @@ const drawBarChart = data => {
     .join("rect")
     .attr("class", d => `bar-${d.count}`);
 };
+
