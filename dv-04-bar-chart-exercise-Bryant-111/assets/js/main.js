@@ -2,7 +2,7 @@ console.log("MAIN JS LOADED");
 
 const svg = d3.select(".responsive-svg-container")
   .append("svg")
-  .attr("viewBox", "0 0 500 1600")
+  .attr("viewBox", "0 0 500 800")
   .style("border", "1px solid black");
 
 d3.csv("data/tvBrandCount.csv", d => {
@@ -12,6 +12,10 @@ d3.csv("data/tvBrandCount.csv", d => {
   };
 }).then(data => {
   console.log("Loaded data:", data);
+  console.log("Length:", data.length);
+  console.log("Max:", d3.max(data, d => d.count));
+  console.log("Min:", d3.min(data, d => d.count));
+  console.log("Extent:", d3.extent(data, d => d.count));
 
   data.sort((a, b) => b.count - a.count);
   console.log("Sorted data:", data);
@@ -26,8 +30,10 @@ const createBarChart = data => {
     .domain([0, 1200])
     .range([0, 400]);
 
-  const barHeight = 20;
-  const spacing = 10;
+  const yScale = d3.scaleBand()
+    .domain(data.map(d => d.brand))
+    .range([0, 800])
+    .padding(0.2);
 
   svg
     .selectAll("rect")
@@ -35,9 +41,12 @@ const createBarChart = data => {
     .join("rect")
     .attr("class", d => `bar bar-${d.count}`)
     .attr("x", 0)
-    .attr("y", (d, i) => i * (barHeight + spacing))
+    .attr("y", d => yScale(d.brand))
     .attr("width", d => xScale(d.count))
-    .attr("height", barHeight)
+    .attr("height", yScale.bandwidth())
     .attr("fill", "blue");
 };
+
+
+
 
