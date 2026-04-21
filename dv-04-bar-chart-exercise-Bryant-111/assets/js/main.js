@@ -38,6 +38,8 @@ const createBarChart = data => {
     .range([0, svgHeight])
     .padding(0.2);
 
+  // Old rectangle code kept here for later:
+  /*
   svg
     .selectAll("rect")
     .data(data)
@@ -48,6 +50,12 @@ const createBarChart = data => {
     .attr("width", d => xScale(d.count))
     .attr("height", yScale.bandwidth())
     .attr("fill", "blue");
-};
+  */
 
+  const barAndLabel = svg
+    .selectAll("g")
+    .data(data)
+    .join("g")
+    .attr("transform", d => `translate(0, ${yScale(d.brand)})`);
+};
 
