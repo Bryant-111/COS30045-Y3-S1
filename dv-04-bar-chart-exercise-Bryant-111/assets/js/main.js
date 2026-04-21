@@ -38,24 +38,19 @@ const createBarChart = data => {
     .range([0, svgHeight])
     .padding(0.2);
 
-  // Old rectangle code kept here for later:
-  /*
-  svg
-    .selectAll("rect")
-    .data(data)
-    .join("rect")
-    .attr("class", d => `bar bar-${d.count}`)
-    .attr("x", 0)
-    .attr("y", d => yScale(d.brand))
-    .attr("width", d => xScale(d.count))
-    .attr("height", yScale.bandwidth())
-    .attr("fill", "blue");
-  */
-
   const barAndLabel = svg
     .selectAll("g")
     .data(data)
     .join("g")
     .attr("transform", d => `translate(0, ${yScale(d.brand)})`);
+
+  barAndLabel
+    .append("rect")
+    .attr("class", d => `bar bar-${d.count}`)
+    .attr("x", 0)
+    .attr("y", 0)
+    .attr("width", d => xScale(d.count))
+    .attr("height", yScale.bandwidth())
+    .attr("fill", "blue");
 };
 
