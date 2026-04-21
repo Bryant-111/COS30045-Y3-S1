@@ -11,6 +11,6 @@ svg
   .attr("height", 16)
   .attr("fill", "blue");
 
-d3.csv("data/tv-data.csv", d => {
+d3.csv("data/tvBrandCount.csv", d => {
   console.log(d);
 });
