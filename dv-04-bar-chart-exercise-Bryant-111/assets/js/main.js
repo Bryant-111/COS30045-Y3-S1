@@ -9,17 +9,11 @@ d3.csv("data/tvBrandCount.csv", d => {
     count: +d.count
   };
 }).then(data => {
-  console.log("Loaded data:", data);
-
   data.sort((a, b) => b.count - a.count);
-  console.log("Sorted data:", data);
-
   drawBarChart(data);
 });
 
 const drawBarChart = data => {
-  console.log("drawBarChart called");
-
   const barHeight = 20;
   const spacing = 10;
 
@@ -34,3 +28,5 @@ const drawBarChart = data => {
     .attr("height", barHeight)
     .attr("fill", "blue");
 };
+
+
