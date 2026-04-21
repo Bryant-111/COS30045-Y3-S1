@@ -29,4 +29,3 @@ const drawBarChart = data => {
     .attr("fill", "blue");
 };
 
-
